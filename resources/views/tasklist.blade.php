@@ -38,9 +38,6 @@
                         <ul class="">
                             @foreach ($tasks as $task)
                             <li class="my-6 flex justify-between gap-5">
-                                <div class="mt-1">
-                                    <input type="checkbox">
-                                </div>
                                 <span class="">{{$task->content}}</span>
                                 <!-- <span>{{$task->id}}</span> -->
                                 <button formaction="{{route('task.destroy', ['id'=>$task->id])}}" class="text-red-400"><i class="fas fa-trash-alt"></i></button>
